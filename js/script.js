@@ -80,9 +80,9 @@ function initCarroselEffect () {
 }
 
 function initTextBlog() {
-  calendar.innerText = "17/11/2022";
+  calendar.innerHTML = "<i class='fas fa-calendar'></i>17/11/2022";
   title.innerText = "Reciclagem";
-  paragraph.innerText="A reciclagem ajuda a conservar recursos naturais como madeira, água e minerais, o que reduz a extração de novas matérias-primas. Quanto mais...";
+  paragraph.innerText="A reciclagem ajuda a conservar recursos naturais como madeira, água e minerais, o que reduz a extração de novas matérias-primas. Quanto mais..."
 }
 
 initNavBar();
