@@ -237,8 +237,8 @@ header .fa-bars {
 }
 
 .service .box-container .box {
-  flex: 1 1 40rem;
-  padding: 2rem 1rem;
+  flex: 1 1 50rem;
+  padding: 3rem 1rem;
   text-align: center;
   background: #fff;
   border: 0.2rem solid var(--blue);
@@ -322,6 +322,14 @@ header .fa-bars {
   flex-wrap: wrap;
 }
 
+.donate .form-container input[type='text']::placeholder {
+  color: var(--light-black);
+}
+
+.donate .form-container input[type='email']::placeholder {
+  color: var(--light-black);
+}
+
 .donate .form-container form .inputBox input,
 select {
   height: 4rem;
@@ -346,6 +354,10 @@ select {
   outline: none;
   border: none;
   resize: none;
+}
+
+.donate .form-container form textarea::placeholder {
+  color: var(--light-black);
 }
 
 .donate .form-container form input[type='submit'] {
@@ -514,6 +526,12 @@ select {
 
 /* media queries  */
 
+@media (max-width: 1024px) {
+  .about .box-container .box { 
+    flex: 1 1 30rem;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 55%;
@@ -566,9 +584,15 @@ select {
     width: auto;
   }
 
-  .service .box-container {
-    width: auto;
+  .about .row  {
+    display: block;
+    padding: 5rem ;
   }
+
+  .about .box-container .box { 
+    flex: 1 1 25rem;
+  }
+  
 }
 
 @media (max-width: 500px) {
@@ -579,4 +603,14 @@ select {
   .donate .form-container form {
     width: 90%;
   }
+
+  .post .box-container .box {
+    display: block;
+    width: 100%;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
 }

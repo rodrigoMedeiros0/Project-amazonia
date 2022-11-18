@@ -55,6 +55,20 @@ function initCarroselEffect () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints:{
+      0: {
+        slidesPerView:1,
+      },
+      520: {
+        slidesPerView:1,
+      },
+      950: {
+        slidesPerView:2,
+      },
+      1100: {
+        slidesPerView:3,
+      }
+    }
   });
 }
 
