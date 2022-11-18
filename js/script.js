@@ -6,6 +6,13 @@ let navbar = document.querySelector('.navbar');
 let link = document.querySelectorAll('.nav-link');
 let sections = document.querySelectorAll('section');
 
+//variaveis para a funcao 
+
+let calendar = document.querySelector('.text-calendar');
+let title = document.querySelector('.text-title');
+let paragraph = document.querySelector('.text-paragraph')
+
+
 function initNavBar() {
   menu.addEventListener('click', () => {
     menu.classList.toggle('fa-times');
@@ -72,6 +79,13 @@ function initCarroselEffect () {
   });
 }
 
+function initTextBlog() {
+  calendar.innerText = "17/11/2022";
+  title.innerText = "Reciclagem";
+  paragraph.innerText="A reciclagem ajuda a conservar recursos naturais como madeira, água e minerais, o que reduz a extração de novas matérias-primas. Quanto mais...";
+}
+
 initNavBar();
 initActiveNavLink();
 initCarroselEffect();
+initTextBlog();
