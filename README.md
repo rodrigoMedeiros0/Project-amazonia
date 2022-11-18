@@ -2,7 +2,6 @@
 
 
 
-
 # 🔨 Funcionalidades do projeto
 
 Este projeto é uma organização fictícia  que atua pela integração entre o desenvolvimento socioeconômico e o equilíbrio ambiental na floresta Amazônica. 
@@ -36,5 +35,8 @@ Após baixar o projeto, você pode abrir com o Visual Studio Code ou Atom e cliq
 - Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
 - Por fim, clique em OK.
 
+##  Projeto em andamento 
+
+Atualmente estou  pegando os textos da seção Blog e criar um  objeto JSON e integrar e chamar ele no javascript
 
 
