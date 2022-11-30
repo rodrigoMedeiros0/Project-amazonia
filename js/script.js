@@ -6,20 +6,8 @@ let navbar = document.querySelector('.navbar');
 let link = document.querySelectorAll('.nav-link');
 let sections = document.querySelectorAll('section');
 
-//variaveis para a função initTextPost
-let calendarPost1 = document.querySelector('.text-calendar1');
-let titlePost1 = document.querySelector('.text-title1');
-let paragraphPost1= document.querySelector('.text-paragraph1')
-
-let calendarPost2 = document.querySelector('.text-calendar2');
-let titlePost2 = document.querySelector('.text-title2');
-let paragraphPost2 = document.querySelector('.text-paragraph2');
-
-let calendar3 = document.querySelector('.text-calendar3');
-let titlePost3 = document.querySelector('.text-title3');
-let paragraphPost3 = document.querySelector('.text-paragraph3');
-
-
+//variavel para função forEach
+let boxPost = document.querySelectorAll('.post-js');
 
 function initNavBar() {
   menu.addEventListener('click', () => {
@@ -42,7 +30,7 @@ function initActiveNavLink() {
         current = section.getAttribute('id');
       }
     });
-  
+
     link.forEach((item) => {
       item.classList.remove('active');
       if (item.href.includes(current)) {
@@ -55,7 +43,7 @@ function initActiveNavLink() {
 }
 
 // swiper carrosel efeito na seção blog
-function initCarroselEffect () {
+function initCarroselEffect() {
   let swiper = new Swiper('.mySwiper', {
     slidesPerView: 3,
     spaceBetween: 50,
@@ -70,41 +58,99 @@ function initCarroselEffect () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    breakpoints:{
+    breakpoints: {
       0: {
-        slidesPerView:1,
+        slidesPerView: 1,
       },
       520: {
-        slidesPerView:1,
+        slidesPerView: 1,
       },
       950: {
-        slidesPerView:2,
+        slidesPerView: 2,
       },
       1100: {
-        slidesPerView:3,
-      }
-    }
+        slidesPerView: 3,
+      },
+    },
   });
 }
 
-function initTextPost() {
-  // primeiro post
-  calendarPost1.innerHTML = "<i class='fas fa-calendar'></i>17/11/2022";
-  titlePost1.innerText = "Reciclagem";
-  paragraphPost1.innerText="A reciclagem ajuda a conservar recursos naturais como madeira, água e minerais, o que reduz a extração de novas matérias-primas. Quanto mais..."
+let json = [
+  {
+    calendar: "<i class='fas fa-calendar'></i>17/11/2022",
+    title: 'Reciclagem',
+    paragraph:
+      'A reciclagem ajuda a conservar recursos naturais como madeira, água e minerais, o que reduz a extração de novas matérias-primas. Quanto mais...',
+  },
+  {
+    calendar: "<i class='fas fa-calendar'></i> 2/11/2022",
+    title: 'Luta pela sobrevivência',
+    paragraph:
+      'O povo indígena yanomami que há séculos ocupa a floresta amazônica enfrenta diveros desafios atuais. A luta contra exploradores ...',
+  },
+  {
+    calendar: "<i class='fas fa-calendar'></i>15/10/2022 ",
+    title: 'Vacinas Covid-19',
+    paragraph:
+      'Na última semana de maio, 10 comunidades receberam doses da vacina contra a Covid-19. A vacina foi destinada desde crianças até adultos...',
+  },
+  {
+    calendar: "<i class='fas fa-calendar'></i> 1/10/2022 ",
+    title: 'Pecuária sustentável',
+    paragraph:
+      'A pecuária sustentável são um conjunto de técnicas com consciência ambiental e responsabilidade social...',
+  },
+  {
+    calendar: "<i class='fas fa-calendar'></i> 22/09/2022 ",
+    title: 'Tecnologia para todos',
+    paragraph:
+      'Essa iniciativa foi criada para apoiar povos e e ensina-los sobre as tecnologias e como elas são úteis...',
+  },
+  {
+    calendar: "<i class='fas fa-calendar'></i> 07/09/2022 ",
+    title: 'Desmatamento',
+    paragraph:
+      'Certas atividades humanas, como o desmatamento, estão levando espécies à extinção em um ritmo alarmante. Estudos mostram que...',
+  },
+];
 
-  // segundo post
-  calendarPost2.innerHTML = "<i class='fas fa-calendar'></i> 2/11/2022"
-  titlePost2.innerText = "Luta pela sobrevivência";
-  paragraphPost2.innerText = "O povo indígena yanomami que há séculos ocupa a floresta amazônica enfrenta diveros desafios atuais. A luta contra exploradores ...";
+boxPost.forEach((element, index) => {
+  //imagem do post
+  let img = document.createElement('img');
 
-  // terceiro post 
-  calendar3.innerHTML = "<i class='fas fa-calendar'></i>15/10/2022 ";
-  titlePost3.innerText = "Vacinas Covid-19";
-  paragraphPost3.innerText = "Na última semana de maio, 10 comunidades receberam doses da vacina contra a Covid-19. A vacina foi destinada desde crianças até adultos...";
-}
+  img.className = 'img-post';
+  element.appendChild(img);
+  element
+    .querySelector('.img-post')
+    .setAttribute('src', `images/img${index + 1}.jpg`);
+
+  let div = document.createElement('div');
+  div.classList.add('content', 'content-js');
+
+  element.appendChild(div);
+
+  //conteudo do post
+  let span = document.createElement('span');
+  let h3 = document.createElement('h3');
+  let p = document.createElement('p');
+  let a = document.createElement('a');
+
+  span.className = 'calendar';
+  h3.className = 'text-title';
+  p.className = 'text-paragraph';
+  a.className = 'btn-post';
+
+  span.innerHTML = json[index].calendar;
+  h3.innerText = json[index].title;
+  p.innerText = json[index].paragraph;
+  a.innerHTML = "<button class='btn'> Leia mais</button>";
+
+  element.querySelector('.content-js').appendChild(span);
+  element.querySelector('.content-js').appendChild(h3);
+  element.querySelector('.content-js').appendChild(p);
+  element.querySelector('.content-js').appendChild(a);
+});
 
 initNavBar();
 initActiveNavLink();
 initCarroselEffect();
-initTextPost();

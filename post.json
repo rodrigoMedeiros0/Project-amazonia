@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "calendar": "<i class='fas fa-calendar'></i>17/11/2022",
+    "title": "Reciclagem",
+    "paragraph": "A reciclagem ajuda a conservar recursos naturais como madeira, água e minerais, o que reduz a extração de novas matérias-primas. Quanto mais..."
+  },
+  {
+    "id": 2,
+    "calendar": "<i class='fas fa-calendar'></i> 2/11/2022",
+    "title": "Luta pela sobrevivência",
+    "paragraph": "O povo indígena yanomami que há séculos ocupa a floresta amazônica enfrenta diveros desafios atuais. A luta contra exploradores ..."
+  },
+  {
+    "id": 3,
+    "calendar": "<i class='fas fa-calendar'></i>15/10/2022 ",
+    "title": "Vacinas Covid-19",
+    "paragraph": "Na última semana de maio, 10 comunidades receberam doses da vacina contra a Covid-19. A vacina foi destinada desde crianças até adultos..."
+  }
+]
