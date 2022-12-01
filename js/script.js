@@ -6,9 +6,6 @@ let navbar = document.querySelector('.navbar');
 let link = document.querySelectorAll('.nav-link');
 let sections = document.querySelectorAll('section');
 
-//variavel para função forEach
-let boxPost = document.querySelectorAll('.post-js');
-
 function initNavBar() {
   menu.addEventListener('click', () => {
     menu.classList.toggle('fa-times');
@@ -113,6 +110,17 @@ let json = [
       'Certas atividades humanas, como o desmatamento, estão levando espécies à extinção em um ritmo alarmante. Estudos mostram que...',
   },
 ];
+
+let card = document.querySelector('.card');
+
+for (let contador = 1; contador <= json.length; contador++) {
+  let div = document.createElement('div');
+  div.classList.add('box', 'swiper-slide', 'post-js');
+  card.appendChild(div);
+}
+
+let boxPost = document.querySelectorAll('.post-js');
+console.log(boxPost);
 
 boxPost.forEach((element, index) => {
   //imagem do post
