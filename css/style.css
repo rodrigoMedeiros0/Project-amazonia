@@ -414,7 +414,6 @@ select {
 }
 
 .post .box-container .box .content:hover h3 {
-  text-decoration: underline;
   color: var(--blue);
 }
 
