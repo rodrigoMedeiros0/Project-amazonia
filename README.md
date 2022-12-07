@@ -1,6 +1,6 @@
 <h1 align="center">Juntos Pela Amazônia</h1>
 
-
+![amazonia1](https://user-images.githubusercontent.com/97979883/206316351-eac66b16-cef7-43f2-aa47-e476ed1fed35.JPG)
 
 # 🔨 Funcionalidades do projeto
 
