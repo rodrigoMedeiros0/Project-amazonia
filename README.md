@@ -24,7 +24,7 @@ As técnicas utilizadas pra isso são:
 
 ## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto inicial](https://github.com/rodrigoMedeiros0/project-amazonia) ou [acessar o site](https://rodrigomedeiros0.github.io/project-amazonia/).
+Você pode [acessar o código fonte do projeto inicial](https://github.com/rodrigoMedeiros0/Project-amazonia) ou [acessar o site](https://rodrigomedeiros0.github.io/Project-amazonia/).
 
 ## 🛠️ Abrir e rodar o projeto
 
