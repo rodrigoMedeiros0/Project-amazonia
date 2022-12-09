@@ -6,7 +6,7 @@ let navbar = document.querySelector('.navbar');
 let link = document.querySelectorAll('.nav-link');
 let sections = document.querySelectorAll('section');
 
-let url = 'blogAPI.json';
+let url = '../project-amazonia/blogAPI.json';
 
 function initNavBar() {
   menu.addEventListener('click', () => {
