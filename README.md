@@ -1,6 +1,13 @@
 <h1 align="center">Juntos Pela Amazônia</h1>
 
 ![amazonia1](https://user-images.githubusercontent.com/97979883/206316351-eac66b16-cef7-43f2-aa47-e476ed1fed35.JPG)
+![sobre](https://user-images.githubusercontent.com/97979883/206521312-01e0dc79-95f2-4131-a544-9abbd787b464.PNG)
+![serviços](https://user-images.githubusercontent.com/97979883/206522035-96bfa0b9-e919-42d0-9e06-48be0eff2014.PNG)
+![doacao](https://user-images.githubusercontent.com/97979883/206522062-813eac92-bfff-41de-b800-3b22078fd42e.PNG)
+![blog0](https://user-images.githubusercontent.com/97979883/206522106-7cbcbce9-29fd-4ac3-aad6-0d6ab6e58184.PNG)
+![blog1](https://user-images.githubusercontent.com/97979883/206522093-512cbc91-9b29-4825-a281-70e562ea7fb6.PNG)
+![footer](https://user-images.githubusercontent.com/97979883/206522122-411ed703-d6d5-4ae0-be67-0e2c47d2384b.PNG)
+
 
 # 🔨 Funcionalidades do projeto
 
